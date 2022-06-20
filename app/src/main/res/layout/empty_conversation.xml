@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:backgroundTint="#898989"/>
+    <TextView
+        android:id="@+id/msg_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor"
+        android:text="@string/no_conversation"
+        android:layout_marginTop="100dp"/>
+    <Button
+        android:id="@+id/start_new"
+        style="@style/Base.Widget.AppCompat.Button.oTextButton"
+        android:text="Start new"
+
+        android:paddingHorizontal="20dp"
+        android:drawableEnd="@drawable/forword_anim"
+
+        android:layout_marginTop="200dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

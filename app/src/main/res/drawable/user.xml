@@ -1,0 +1,21 @@
+<vector android:height="24dp"
+    android:viewportHeight="24" android:viewportWidth="24"
+
+    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <path android:fillColor="#d09696" android:pathData="M8,10A0.01,0.015 1 1 1 8.2,8M7.9,10A4,4 1 0 1 16,10M16,8A0.1,0.2 1 0 1 16,10A3.3,4 1 0 1 8,9"/>
+
+    <path android:fillColor="#34a675" android:pathData="M3,24A4,4 1 1 1 21,24"/>
+
+    <path android:pathData="M8.3,9A14,5 1 0 1 9,5A4,4 1 0 1 16.2,8A5,4 1 0 1 9.6,7A7,18 1 0 0 13.5,8.5A5,3 1 0 1 8.2,8.2"
+        android:fillColor="#454545"/>
+   <group
+       android:pivotX="50"
+
+       android:name="eyes"
+       >
+   <path android:pathData="M10,10A0.2,0.2 1 0 1 11,10M13,10A0.2,0.2 1 0 1 14,10"
+
+       android:fillColor="#343434"/>
+   </group>
+</vector>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con_root"
+    android:windowSoftInputMode="adjustResize"
+    android:background="@color/backgroundColor">
+    <LinearLayout
+        android:id="@+id/select_opt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|end"
+        android:visibility="gone"
+      android:translationZ="11dp"
+        android:padding="2dp">
+        <TextView
+            android:id="@+id/opt_forward"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/ic_baseline_forward_24"
+            />
+        <TextView
+            android:id="@+id/opt_delete"
+            android:layout_width="30dp"
+            android:layout_margin="10dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/ic_baseline_delete_24"
+            />
+
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:background="@drawable/topbar"
+        android:translationZ="10dp">
+
+        <ImageButton
+            android:id="@+id/back_conversation_activity"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="18dp"
+            android:layout_gravity="start"
+            android:background="@drawable/ic_baseline_arrow_back_24"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+
+           android:layout_gravity="start"
+           android:background="?android:selectableItemBackground"
+           android:layout_marginStart="50dp">
+           <TextView
+               android:id="@+id/conversation_activity_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Name"
+               android:transitionName="recName"
+               android:textColor="#ffffff"
+               android:textSize="17sp"
+               android:paddingLeft="10dp"
+
+               android:paddingTop="10dp"
+              />
+           <TextView
+               android:id="@+id/conversation_activity_id_info"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="info"
+               android:textColor="#ffffff"
+               android:textSize="12sp"
+               android:paddingLeft="10dp"
+               android:paddingBottom="3dp"/>
+       </LinearLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="17.5dp"
+           android:layout_marginTop="13dp"
+
+           android:layout_gravity="end|top"
+           android:layout_marginEnd="30dp">
+           <ImageView
+               android:id="@+id/conversation_profile_img"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:onClick="viewImage"
+               tools:srcCompat="@tools:sample/avatars"
+               android:transitionName="recPic"
+                />
+       </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:id="@+id/profile_info"
+            android:layout_height="55dp"
+            android:background="?android:selectableItemBackground"
+            android:backgroundTint="@color/colorPrimary"
+            android:foregroundGravity="center"
+            android:layout_gravity="end">
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+               android:clickable="false"
+                android:background="?android:selectableItemBackground"
+                android:foreground="@drawable/menu_icon"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="51dp"
+        android:layout_marginBottom="41dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:id="@+id/conversation_activity_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+     <com.sk.mymassenger.MEditText
+            android:id="@+id/conversation_enter_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:maxHeight="200dp"
+            android:layout_gravity="bottom"
+            android:translationZ="15dp"
+            android:textColorHint="@color/lightText"
+            android:background="@color/backgroundColor"
+            android:textColor="@color/textColor"
+            android:paddingEnd="40dp"
+            android:hint="Type Your Message..."
+          />
+
+      <LinearLayout
+
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="5dp"
+
+        android:orientation="vertical"
+
+        android:layout_gravity="bottom|end"
+        android:translationZ="20dp">
+          <ImageButton
+              android:layout_width="30dp"
+              android:layout_height="1dp"
+              android:backgroundTint="@color/colorPrimary"
+              android:background="@drawable/ic_baseline_insert_drive_file_24"
+              android:id="@+id/conversation_send_btn_file"
+              android:visibility="gone"
+              android:layout_marginBottom="10dp"/>
+          <ImageButton
+              android:layout_width="30dp"
+              android:layout_height="0dp"
+              android:backgroundTint="@color/colorPrimary"
+              android:background="@drawable/ic_baseline_image_24"
+              android:id="@+id/conversation_send_btn_img"
+              android:visibility="gone"
+              android:layout_marginBottom="10dp"/>
+          <ImageButton
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:backgroundTint="@color/colorPrimary"
+              android:background="@drawable/ic_baseline_add_24"
+              android:id="@+id/extra_option"/>
+
+      </LinearLayout>
+        <ImageButton
+            android:id="@+id/conversation_send_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_baseline_send_24"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:layout_gravity="bottom|end"
+            android:translationZ="20dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

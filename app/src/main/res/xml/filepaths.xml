@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+<files-path
+    name="oTextdata"
+    path="/"/>
+    <files-path
+        name="sentFile"
+        path="sent/file"/>
+    <files-path
+        name="sentImages"
+        path="sent/images"/>
+    <files-path
+        name="sentGifs"
+        path="sent/gifs"/>
+    <files-path
+        name="recGifs"
+        path="receive/gifs"/>
+    <files-path
+        name="receiveFile"
+        path="receive/file"/>
+    <files-path
+        name="receiveImages"
+        path="receive/images"/>
+    <files-path
+        name="imagesThumb"
+        path="imagesThumb"/>
+    <files-path
+        name="profiles"
+        path="profiles"/>
+</paths>

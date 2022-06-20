@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:minHeight="400dp"
+    android:layout_height="wrap_content">
+  <TextView
+      android:text="Select one :"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  <androidx.recyclerview.widget.RecyclerView
+      android:scrollbars="vertical"
+      android:id="@+id/reactList"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+      android:layout_column="4"
+
+      app:spanCount="4"
+      tools:listitem="@layout/adapter_text_view"/>
+</LinearLayout>

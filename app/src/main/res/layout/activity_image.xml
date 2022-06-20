@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageActivity"
+    android:background="#343434">
+    <TextView
+        android:layout_gravity="top|end"
+        android:id="@+id/mood"
+        android:text="@string/default_mood"
+        android:onClick="showMood"
+        android:padding="20dp"
+        android:translationZ="40dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager2.widget.ViewPager2
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:listitem="@layout/status_item"
+        android:id="@+id/statusList"
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fab_open_menu"
+          style="@style/oTextFab"
+          android:src="@drawable/ic_baseline_add_24"
+          android:layout_margin="20dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/videoStatus"
+        style="@style/oTextFab"
+        android:visibility="gone"
+        android:src="@drawable/ic_baseline_video_library_24"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="90dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/audioStatus"
+        style="@style/oTextFab"
+        android:src="@drawable/ic_baseline_music_note_24"
+
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="160dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imageStatus"
+        style="@style/oTextFab"
+        android:visibility="gone"
+        android:src="@drawable/ic_baseline_image_24"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="230dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteStatus"
+        style="@style/oTextFab"
+        android:visibility="invisible"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="300dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gragh_setting.xml"
+    app:startDestination="@id/profileSettingFragment">
+
+    <fragment
+        android:id="@+id/setting"
+        tools:layout="@layout/profile_fragment"
+        android:name="com.sk.mymassenger.settings.EditProfileFragment"
+        android:label="Setting" />
+    <fragment
+        tools:layout="@layout/profile_setting"
+        android:id="@+id/profileSettingFragment"
+        android:name="com.sk.mymassenger.settings.ProfileSettingFragment"
+        android:label="ProfileSettingFragment" >
+        <action
+            android:id="@+id/action_profileSettingFragment_to_editProfile"
+            app:destination="@id/setting" />
+        <action
+            android:id="@+id/action_profileSettingFragment_to_ExtraSettingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@xml/root_preferences"
+        android:id="@+id/settingsFragment"
+        android:name="com.sk.mymassenger.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

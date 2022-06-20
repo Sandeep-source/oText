@@ -1,0 +1,3 @@
+<scale android:drawable="@drawable/app_icon" android:scaleHeight="1.5"
+    android:scaleWidth="1.5" android:scaleGravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

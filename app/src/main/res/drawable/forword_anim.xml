@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:drawable="@drawable/ic_baseline_arrow_forward_ios_24">
+<target
+    android:animation="@animator/forward_animator"
+    android:name="main"/>
+</animated-vector>

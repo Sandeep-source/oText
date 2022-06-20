@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/ic_baseline_check_24" android:top="-3dp" android:bottom="3dp" />
+
+    <item android:drawable="@drawable/ic_baseline_check_24" android:top="5dp" android:bottom="-5dp">
+
+    </item>
+</layer-list>

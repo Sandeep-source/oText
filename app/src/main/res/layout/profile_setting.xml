@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light"
+    app:layoutDescription="@xml/profile_setting_scene">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start|top"
+        android:background="@drawable/back_back"
+        android:translationZ="3dp">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="start"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:contentDescription="@string/back_button" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ScrollView
+
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/profileSetting_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:background="#e2e2e2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toStartOf="@+id/cardView2"
+                        android:gravity="end"
+                        android:textColor="#454545"
+                        android:textSize="20sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:id="@+id/profile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/user"
+                            android:contentDescription="@string/profile_pic_description"
+                            tools:srcCompat="@tools:sample/avatars" />
+                    </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/profileSetting"
+                        style="@style/Base.Widget.AppCompat.Button.oTextButton.Mini"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="false"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/cardView2"
+                        android:drawableEnd="@drawable/ic_baseline_edit_24"
+                        android:text="@string/edit_label"
+                        android:textAllCaps="false" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/profileSetting_top"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+
+                        android:gravity="center"
+                        android:paddingHorizontal="10dp"
+                        android:paddingTop="12dp"
+
+                        android:textSize="16sp"
+                        android:text="@string/my_status_label"
+                        android:textColor="@color/textColor"
+                        android:drawableBottom="@drawable/bottom_line"
+                        android:drawableEnd="@drawable/ic_status" />
+
+
+                    <TextView
+                        style="@style/oTextMenuItem"
+                        android:id="@+id/theme"
+
+                        android:text="@string/theme_label"
+                        android:drawableBottom="@drawable/bottom_line"
+                        android:drawableEnd="@drawable/ic_baseline_color_lens_24" />
+
+
+
+                    <TextView
+                        android:id="@+id/extra_setting"
+                        style="@style/oTextMenuItem"
+
+                        android:text="@string/extra_setting_label"
+                        android:drawableBottom="@drawable/bottom_line"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                    <TextView
+                        android:id="@+id/signOut"
+                        style="@style/oTextMenuItem"
+
+                        android:text="@string/sign_out"
+                        android:drawableBottom="@drawable/bottom_line"
+                        android:drawableEnd="@drawable/ic_baseline_exit_to_app_24" />
+
+                    <TextView
+                        android:id="@+id/notification"
+                        style="@style/oTextMenuItem"
+
+                        android:text="@string/notification_label"
+                        android:drawableBottom="@drawable/bottom_line"
+                        android:drawableEnd="@drawable/ic_notifications" />
+                    <TextView
+                        android:id="@+id/chatSetting"
+                        style="@style/oTextMenuItem"
+                        android:drawableBottom="@drawable/bottom_line"
+
+                        android:text="@string/chat_setting_label"
+                        android:drawableEnd="@drawable/ic_baseline_chat_24" />
+                    <TextView
+                        android:id="@+id/deleteAccount"
+                        style="@style/oTextMenuItem"
+
+                        app:drawableTint="@color/red"
+                        android:text="@string/delete_account_label"
+                        android:drawableBottom="@drawable/bottom_line"
+                        android:drawableEnd="@drawable/ic_baseline_delete_24" />
+                </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

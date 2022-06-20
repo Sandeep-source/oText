@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversation_list"
+        android:transitionGroup="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"/>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        app:title="@string/app_name"
+        app:titleTextColor="?attr/colorOnPrimary"
+        app:titleMarginStart="20dp"
+        android:background="@drawable/topbar"
+        android:layout_gravity="top"
+
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/main_profile_card"
+            android:layout_width="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center|end"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp"
+            android:translationZ="40dp">
+            <ImageView
+                android:id="@+id/main_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:srcCompat="@tools:sample/avatars"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/select_opt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|end"
+        android:visibility="gone"
+        android:padding="2dp">
+        <TextView
+            android:id="@+id/opt_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/ic_baseline_delete_24"
+
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_btn"
+        style="@style/oTextFab"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_margin="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_btn_new_chat"
+        style="@style/oTextFab"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="90dp"
+        android:visibility="gone"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_btn_sign_out"
+        style="@style/oTextFab"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="160dp"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        android:visibility="gone"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

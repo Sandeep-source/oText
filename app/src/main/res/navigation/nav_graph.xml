@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chatListFragment"
+
+    >
+
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.sk.mymassenger.chat.ChatListFragment"
+        android:label="ChatListFragment"
+        tools:layout="@layout/fragment_chat_list">
+        <argument
+            android:name="userMode"
+            android:defaultValue="mode_public" />
+        <action
+            android:id="@+id/action_chatListFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="https://chat.oText.home/" />
+        <action
+            android:id="@+id/action_chatListFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_chatListFragment_to_profileSettingFragment"
+            app:destination="@id/profileSettingFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.sk.mymassenger.chat.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_chatFragment_to_imageBoard"
+            app:destination="@id/imageBoard" />
+        <action
+            android:id="@+id/action_chatFragment_to_profileOptions"
+            app:destination="@id/profileOptions"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/imageBoard"
+        android:name="com.sk.mymassenger.chat.ImageBoard"
+        android:label="fragment_image_board"
+        tools:layout="@layout/fragment_image_board" />
+    <fragment
+        tools:layout="@layout/fragment_contact"
+        android:id="@+id/contactFragment"
+        android:name="com.sk.mymassenger.chat.ContactFragment"
+        android:label="ContactFragment" >
+        <action
+            android:id="@+id/action_contactFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/activity_chat__setting"
+        android:id="@+id/profileOptions"
+        android:name="com.sk.mymassenger.chat.ProfileOptions"
+        android:label="ProfileOptions" />
+    <fragment
+        tools:layout="@layout/profile_setting"
+        android:id="@+id/profileSettingFragment"
+        android:name="com.sk.mymassenger.settings.ProfileSettingFragment"
+        android:label="ProfileSettingFragment" >
+        <action
+            android:id="@+id/action_profileSettingFragment_to_editProfile"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_profileSettingFragment_to_ExtraSettingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_profileSettingFragment_to_themeFragment"
+            app:destination="@id/themeFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/profile_fragment"
+        android:id="@+id/editProfileFragment"
+        android:name="com.sk.mymassenger.settings.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        tools:layout="@xml/root_preferences"
+        android:id="@+id/settingsFragment"
+        android:name="com.sk.mymassenger.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/themeFragment"
+        tools:layout="@layout/theme_selection"
+        android:name="com.sk.mymassenger.settings.ThemeFragment"
+        android:label="ThemeFragment" />
+
+</navigation>

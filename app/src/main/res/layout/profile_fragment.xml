@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start|top"
+        android:onClick="profileBack"
+        android:background="@drawable/back_back">
+        <ImageButton
+            android:id="@+id/profile_back_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="start"
+
+            android:translationZ="10dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:translationZ="10dp">
+        <ImageView
+            android:id="@+id/user_profile_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:id="@+id/edit_profile"
+        style="@style/Base.Widget.AppCompat.Button.oTextButton"
+        android:text="Select"
+        android:drawableEnd="@drawable/ic_baseline_camera_alt_24"
+        android:paddingHorizontal="20dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:hint="@string/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        app:endIconMode="clear_text"
+
+        app:startIconDrawable="@drawable/user"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_username"
+           android:inputType="text"
+            android:paddingHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:hint="@string/mood_label"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_baseline_tag_faces_24"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mood"
+            android:inputType="text"
+            android:paddingHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/mood_default_value" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="@string/free_time_label"
+        android:layout_margin="5dp"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/free_time"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/free_time_default_value" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+
+               android:id="@+id/setting_app_logo"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+
+
+               android:background="@drawable/app_icon_2"
+               />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

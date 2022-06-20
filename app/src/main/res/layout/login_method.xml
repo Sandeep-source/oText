@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/welcome_text"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:padding="50dp"/>
+    <ImageView
+        android:src="@drawable/app_icon_2"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Log in with"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/sign_email"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:padding="10dp"
+        app:tint="@color/colorPrimary"
+        android:layout_margin="30dp"
+        android:src="@drawable/fui_ic_mail_white_24dp"
+        android:layout_gravity="center"
+        />
+    <ImageButton
+        android:id="@+id/sign_phone"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_margin="30dp"
+        app:tint="@color/colorPrimary"
+        android:src="@drawable/fui_ic_phone_white_24dp"
+
+        android:layout_gravity="center"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/sign_google"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        app:tint="@color/colorPrimary"
+        android:src="@drawable/fui_ic_googleg_color_24dp"
+
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+/>
+</LinearLayout>

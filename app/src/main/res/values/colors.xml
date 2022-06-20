@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ae5aa4</color>
+    <color name="colorOnPrimary">#424041</color>
+    <color name="colorPrimaryDark">#ca52bd</color>
+    <color name="colorAccent">#ca52bd</color>
+    <color name="light">#eaeaea</color>
+    <color name="lightText">#aaaaaa</color>
+    <color name="red">#aa0000</color>
+    <color name="backgroundColor">#fcfcfc</color>
+    <color name="backgroundColorLite">#eaeaea</color>
+    <color name="textColor">#454545</color>
+    <color name="mtrl_fab_icon_background">#fff</color>
+    <color name="green">#29C107</color>
+    <color name="light_red">#ff7878</color>
+
+    <color name="logo">#eaeaea</color>
+    <!-- sky blue theme color-->
+    <color name="skyBlue">#4c98cf</color>
+    <color name="skyBluedark">#4b81bc</color>
+    <color name="skyBlueBack">#5c538d</color>
+
+    <!--Cyan Theme Colors-->
+
+    <color name="colorPrimaryC">#b8f4c8</color>
+    <color name="colorPrimaryDarkC">#98EFAF</color>
+    <color name="colorAccentC">#9d4994</color>
+
+
+    <!--color metarial-->
+    <color name="primaryColor">#f50057</color>
+    <color name="primaryLightColor">#ff5983</color>
+    <color name="primaryDarkColor">#bb002f</color>
+    <color name="primaryTextColor">#000000</color>
+
+</resources>

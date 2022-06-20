@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/backgroundColor">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:title=""
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/contact_back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:contentDescription="@string/back_button" />
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:imeOptions="actionDone"
+            android:imeActionLabel="Done"
+            android:id="@+id/search_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:layout_gravity="top"
+            android:clickable="true"
+            android:focusable="true"
+            android:outlineSpotShadowColor="?colorPrimary"
+            android:outlineAmbientShadowColor="?colorPrimary"
+
+            android:focusedByDefault="false"
+            android:layout_marginStart="5dp"
+            android:hint="@string/search_by_email"
+            android:textColorHint="?attr/colorOnPrimary"
+            android:textColor="?attr/colorOnPrimary"
+
+            android:drawableBottom="@drawable/msg_back_dark"
+            android:autofillHints="@string/search_by_email" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/globalUsers"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/allow"
+                android:padding="10dp"
+                android:text="Allow Contact"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

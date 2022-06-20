@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <group
+        android:pivotY="50"
+        android:pivotX="50"
+        android:name="icon_back">
+
+    <path android:pathData="M0,20A20,20 0 1,1 40,20M0,20A20,20 0 0,0 40,20"
+        android:fillColor="?attr/colorPrimary" />
+    </group>
+
+  <group android:name="icon_text">
+    <path android:pathData="M10,10h20v5h-20" android:fillColor="?attr/colorOnPrimary" />
+    <path android:pathData="M18,10v20A40,10 0 0,0 25,35A10,10 0 0,0 22,30v-20z"
+        android:fillColor="?attr/colorOnPrimary" />
+  </group>
+</vector>

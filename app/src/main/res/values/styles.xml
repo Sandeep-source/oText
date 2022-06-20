@@ -1,0 +1,142 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="colorOnPrimary">@color/textColor</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+    </style>
+
+
+    <!-- App default theme -->
+    <style name="oText.Theme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="colorOnPrimary">@color/logo</item>
+    </style>
+
+    <!-- App theme mono light-->
+    <style name="oText.Theme.Mono" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="colorOnPrimary">@color/logo</item>
+    </style>
+
+
+    <!--App theme mono dark -->
+    <style name="oText.Theme.Mono.Dark" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="colorOnPrimary">@color/light</item>
+    </style>
+
+
+    <style name="oText.Theme.Blue">
+        <item name="colorPrimary">@color/skyBlue</item>
+        <item name="colorPrimaryDark">@color/skyBluedark</item>
+
+        <item name="android:statusBarColor">@color/skyBluedark</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="colorOnPrimary">@color/light</item>
+    </style>
+
+  <!--Material test-->
+    <style name="oText.Theme.Mat" parent="AppTheme">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.MaterialComponents.Chip" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <!-- Cyan theme -->
+    <style name="oText.Theme.Cyan" >
+        <item name="colorOnPrimary">@color/textColor</item>
+
+        <item name="backgroundColor">@color/skyBlue</item>
+        <item name="colorPrimary">@color/colorPrimaryC</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkC</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkC</item>
+    </style>
+
+    
+    <style name="Base.Widget.AppCompat.Button.oTextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="drawableTint">#fff</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.MaterialComponents.Chip</item>
+        <item name="android:background">@drawable/background</item>
+
+    </style>
+
+    <style name="Base.Widget.AppCompat.Button.oTextButton.Mini" parent="AppTheme.oTextButton">
+        <item name="android:layout_height">34dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="drawableTint">#fff</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.MaterialComponents.Chip</item>
+    </style>
+
+<!-- Setting list item style-->
+    <style name="oTextMenuItem" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.Support.CoordinatorLayout.SentMessageStyle">
+        <item name="android:background">@drawable/msg_back_light</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+    <style name="Widget.Support.CoordinatorLayout.ReceivedMessageStyle">
+        <item name="android:background">@drawable/msg_back_light</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+
+    <style name="oTextFab" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:translationZ">20dp</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="tint">@color/logo</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+    </style>
+
+    <style name="oTextFab.Mini">
+        <item name="fabSize">mini</item>
+    </style>
+
+
+
+</resources>

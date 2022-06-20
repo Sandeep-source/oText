@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable-normal/otext_launcher.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/animated_splash.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/app_icon.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/app_icon_2.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/back_back.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/background.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/forword_anim.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.223" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_arrow_downward_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_arrow_upward_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.255" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_color_lens_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.255" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_baseline_signal_wifi_4_bar_24.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_cancel.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/ic_ofline.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/msg_back_dark.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/online_image.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/otext_launcher.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/progress_drawble.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/sending_drawble.xml" value="0.4" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/topbar.xml" value="0.234375" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/drawable/typing_dots.xml" value="0.290625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout-v26/fragment_contact.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_chat__setting.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_contact.xml" value="0.32360742705570295" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_email_verification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_home.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_image.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_message_forwarder.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_private.xml" value="0.21822916666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_setup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/activity_splash.xml" value="0.18659420289855072" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/adapter_text_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/audio_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/conversation_layout.xml" value="0.18115942028985507" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/empty_conversation.xml" value="0.4" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/fragment_chat.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/fragment_chat_list.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/fragment_contact.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/fragment_image_board.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/grid_image.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/image_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/login_method.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/msg_box.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/msg_box_con.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/password_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/path_private.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/private_conversation_fragment.xml" value="0.21822916666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/profile_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/profile_setting.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/raect_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/select_option.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/setting_main.xml" value="0.15443840579710144" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/setting_up_profile_dialog_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/settings_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/spinner.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/status_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/status_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/theme_selection.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/layout/video_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/MyMassenger/app/src/main/res/xml/root_preferences.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

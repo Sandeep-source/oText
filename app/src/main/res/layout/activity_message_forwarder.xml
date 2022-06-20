@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageForwarderActivity"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/topbar"
+        app:title="Send To..."
+        app:titleTextColor="#fefefe"
+        app:titleMarginStart="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/forward_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/forward_btn"
+        android:src="@drawable/ic_baseline_send_24"
+        app:tint="#fff"
+        app:backgroundTint="@color/backgroundColor"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="forward"
+       android:layout_gravity="bottom|end"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        android:translationZ="20dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

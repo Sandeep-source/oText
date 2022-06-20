@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".chat.ImageBoard">
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:hint="Search"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_margin="10dp"
+      app:startIconDrawable="@drawable/ic_baseline_image_24"
+      app:endIconMode="clear_text"
+      android:layout_height="wrap_content">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/searchImage"
+          android:padding="2dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+  </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageList"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:minHeight="300dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/grid_image"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

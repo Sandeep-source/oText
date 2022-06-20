@@ -1,0 +1,119 @@
+<resources>
+    //TODO add your google-services.json at proper place
+    <string name="app_name">oText</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="ThemeCat">Theme</string>
+    <string name="DarkTheme">Dark Theme</string>
+    <string name="free_time_label">Free Time</string>
+    <string name="free_time_default_value">No time</string>
+    <string name="edit_profile_option_label">Edit Profile</string>
+    <string name="mood_default_value">😀</string>
+    <string name="mood_label">Mood</string>
+    <string name="profile_pic_description">profile_pic</string>
+    <string name="add_status_label">Add Status</string>
+    <string name="delete_status_label">Delete Status</string>
+    <string name="default_mood">😀</string>
+    <string name="free_time_text">Free Time :</string>
+    <string name="extra_setting_label">Extra Setting</string>
+    <string name="continue_text">Continue</string>
+    <string name="choose_pic">Choose Pic</string>
+    <string name="user_name">User Name</string>
+    <string name="search_by_email">search by email or number</string>
+    <string name="back_button">back button</string>
+    <string name="no_conversation">You didn\'t started any conversation yet</string>
+    <string name="name">Name</string>
+    <string name="user_profile">User Profile</string>
+    <string name="info">info</string>
+    <string name="reply">Reply</string>
+    <string name="forward">Forward</string>
+    <string name="react">React</string>
+    <string name="delete">Delete</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string-array name="react_values">
+        <item>😀</item>
+        <item>😁</item>
+        <item>😂</item>
+        <item>🤣</item>
+        <item>😃</item>
+        <item>😄</item>
+        <item>😅</item>
+        <item>😆</item>
+        <item>😉</item>
+        <item>😊</item>
+        <item>😋</item>
+        <item>😎</item>
+        <item>😍</item>
+        <item>😘</item>
+        <item>🥰</item>
+        <item>😗</item>
+        <item>😙</item>
+        <item>😚</item>
+        <item>☺</item>
+        <item>🙂</item>
+        <item>🤗</item>
+        <item>🤩</item>
+        <item>🤔</item>
+        <item>🤨</item>
+        <item>😐</item>
+        <item>😑</item>
+        <item>😶</item>
+        <item>🙄</item>
+        <item>😏</item>
+        <item>😣</item>
+        <item>😥</item>
+        <item>😮</item>
+        <item>🤐</item>
+        <item>😯</item>
+        <item>😪</item>
+        <item>😫</item>
+        <item>🥱</item>
+        <item>😴</item>
+        <item>😛</item>
+        <item>😜</item>
+        <item>😜</item>
+        <item>😒</item>
+        <item>😔</item>
+        <item>😕</item>
+        <item>🙃</item>
+        <item>☹</item>
+        <item>💞</item>
+        <item>💓</item>
+        <item>💕</item>
+
+
+        <item>❤</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_account_label">Delete Account</string>
+    <string name="chat_setting_label">Chat Setting</string>
+    <string name="notification_label">Notification</string>
+    <string name="my_status_label">My Status</string>
+    <string name="edit_label">Edit</string>
+    <string name="theme_label">Theme</string>
+    <string name="receiver_info">Receiver info</string>
+    <string name="in_contact_by">In contact By :</string>
+    <string name="welcome_text">Welcome to oText family</string>
+    <string name="contact_info">Contact info :</string>
+    //TODO add firebase realtime database url
+    <string name="FIREBASE_REALTIME_DB_PATH"></string>
+    //TODO add pixabay api key
+    <string name="PIXABAY_API"></string>
+</resources>

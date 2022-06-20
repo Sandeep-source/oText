@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor">
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="50dp"
+      android:layout_gravity="center_horizontal"
+      android:translationZ="10dp"
+      android:layout_marginTop="50dp">
+      <ImageView
+          android:id="@+id/upload_profile"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+
+          tools:srcCompat="@tools:sample/avatars"
+          android:contentDescription="user pic" />
+  </androidx.cardview.widget.CardView>
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.oTextButton"
+        android:id="@+id/upload_profile_btn"
+        android:text="@string/choose_pic"
+        android:layout_gravity="center_horizontal"
+         android:drawableEnd="@drawable/user"
+        android:layout_marginTop="200dp"/>
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="270dp"
+      app:counterEnabled="true"
+      app:counterMaxLength="50"
+      android:layout_marginHorizontal="10dp"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:hint="@string/user_name"
+      app:endIconMode="clear_text"
+      app:startIconDrawable="@drawable/user"
+      app:startIconTint="@color/light"
+      app:helperText="Required"
+      app:helperTextTextColor="#992323"
+
+      >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+  </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/button_continue"
+        android:text="@string/continue_text"
+        style="@style/Base.Widget.AppCompat.Button.oTextButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="380dp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

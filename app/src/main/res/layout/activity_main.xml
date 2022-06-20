@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversation_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar"
+        android:layout_gravity="top"
+
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oText"
+            android:textColor="#eaeaea"
+            android:paddingTop="10dp"
+            android:paddingStart="25dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/main_profile_card"
+            android:layout_width="40dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom|end"
+            android:layout_height="40dp"
+            app:cardCornerRadius="20dp"
+            android:translationZ="40dp">
+            <ImageView
+                android:id="@+id/main_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="openProfile"
+                tools:srcCompat="@tools:sample/avatars"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout
+        android:id="@+id/select_opt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|end"
+        android:visibility="gone"
+        android:padding="2dp">
+        <TextView
+            android:id="@+id/opt_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/ic_baseline_delete_24"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+
+        android:translationZ="50dp"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/action_btn"
+            android:text="+"
+            android:translationZ="20dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:background="@drawable/background"
+
+            android:layout_gravity="start"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+      <Button
+            android:id="@+id/action_btn_new_chat"
+
+            android:textColor="#ffffff"
+             android:onClick="startNewChat"
+            android:drawableBottom="@drawable/ic_baseline_chat_24"
+            android:background="@drawable/background"
+            android:layout_gravity="end"
+            android:paddingBottom="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/action_btn_open_setting"
+
+            android:textColor="#ffffff"
+            android:onClick="openSetting"
+            android:drawableBottom="@drawable/ic_baseline_settings_24"
+            android:background="@drawable/background"
+            android:layout_gravity="end"
+            android:paddingBottom="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/action_btn_sign_out"
+
+            android:textColor="#ffffff"
+            android:onClick="signOut"
+            android:drawableBottom="@drawable/ic_baseline_exit_to_app_24"
+            android:background="@drawable/background"
+            android:layout_gravity="end"
+            android:paddingBottom="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/user_search_drawable"
+    >
+    <target
+
+        android:animation="@animator/search_animator"
+        android:name="userList"/>
+    <target
+        android:animation="@animator/lens"
+        android:name="lens"/>
+
+</animated-vector>

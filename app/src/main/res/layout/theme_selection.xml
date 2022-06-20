@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <include layout="@layout/msg_box_con"
+        android:id="@+id/rec"
+        android:layout_gravity="start"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content" />
+    <include layout="@layout/msg_box_con"
+        android:id="@+id/sent"
+        android:layout_gravity="end"
+
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/themeSelection"
+        android:layout_height="wrap_content">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/defaultTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pink (Default)"
+            android:background="@color/colorPrimary"
+            />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/cyanTheme"
+            android:layout_width="match_parent"
+            android:text="Cyan"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryC"
+            />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/skyBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skyBlue"
+            android:text="SkyBlue"
+            />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/monoPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Monochromatic Pink"
+            />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/monoPinkLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Monochromatic Pink(Light)"
+            />
+
+    </RadioGroup>
+
+</ScrollView>
+</LinearLayout>

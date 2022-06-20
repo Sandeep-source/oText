@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Widget.AppCompat.Button.oTextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:drawableTint">#fff</item>
+        <item name="android:background">@drawable/background</item>
+
+    </style>
+
+    <style name="Base.Widget.AppCompat.Button.oTextButton.Mini" parent="AppTheme.oTextButton">
+        <item name="android:layout_height">34dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:drawableTint">#fff</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="oText.Theme.Cyan">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorOnPrimary">@color/textColor</item>
+        <item name="colorPrimary">@color/colorPrimaryC</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkC</item>
+    </style>
+</resources>

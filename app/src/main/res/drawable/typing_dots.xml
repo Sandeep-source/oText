@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="45dp"
+    android:height="30dp"
+    android:viewportWidth="45"
+    android:viewportHeight="30">
+<group android:name="d1"
+    >
+    <path android:pathData="M11,11A2,2 1 1 0 11,10" android:fillColor="?attr/colorOnPrimary"/>
+
+</group>
+    <group android:name="d2"
+        >
+        <path android:pathData="M21,11A2,2 1 1 0 21,10" android:fillColor="?attr/colorOnPrimary"/>
+
+    </group>
+    <group android:name="d3"
+        >
+        <path android:pathData="M31,11A2,2 1 1 0 31,10" android:fillColor="?attr/colorOnPrimary"/>
+
+    </group>
+</vector>
